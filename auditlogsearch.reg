@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AuditLogSearch]
+"MUIVerb"="AuditLogSearch"
+"position"="bottom"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\AuditLogSearch\command]
+@="powershell.exe C:\Users\MBeaudin\source\repos\auditlogsearch\search.ps1  \"%%CD%%\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AuditLogSearch]
+@="open with AuditLogSearch"
+
+[HKEY_CLASSES_ROOT\*\shell\AuditLogSearch\command]
+@="powershell.exe C:\Users\MBeaudin\source\repos\auditlogsearch\search.ps1  \"%%CD%%\""
